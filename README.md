@@ -120,6 +120,7 @@ form = get_form_html(data)
 | `prefill_from_strings(html=, css=, js=)` | Use raw strings |
 | `open_pen(data)` | Open prefilled pen in browser |
 | `get_form_html(data)` | Get the HTML form as a string |
+| `get_batch_html(directory)` | Get a batch launcher page for a directory of HTML files |
 
 All functions accept optional keyword arguments for metadata: `title`, `description`, `private`, `layout`, `css_external`, `js_external`, etc.
 

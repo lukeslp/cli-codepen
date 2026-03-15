@@ -4,5 +4,7 @@ sent/*
 !sent/.gitkeep
 datavis-to-codepen.html
 __pycache__/
+.pytest_cache/
+.claude/
 dist/
 *.egg-info/
