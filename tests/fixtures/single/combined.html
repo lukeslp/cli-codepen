@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Test Page</title>
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <style>
+    :root {
+      --accent: #ff6b6b;
+    }
+    body {
+      background: #282c34;
+      color: #abb2bf;
+    }
+  </style>
+  <meta name="description" content="A test page">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Combined HTML Test</h1>
+    <p>This page has inline styles, scripts, and external resources.</p>
+    <div id="output"></div>
+  </div>
+  <style>
+    .wrapper {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    #output {
+      padding: 1rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
+  <script>
+    const items = _.range(1, 6).map(n => `Item ${n}`);
+    document.getElementById('output').innerHTML = items.map(i => `<p>${i}</p>`).join('');
+  </script>
+</body>
+</html>

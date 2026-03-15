@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: monospace;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+canvas {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+}
