@@ -659,7 +659,7 @@ def generate_batch_html(directory: str, return_manifest: bool = False):
 </head>
 <body>
   <h1>{dir_name} &rarr; CodePen</h1>
-  <p class="count">{success} visualizations ready to send</p>
+  <p class="count">{success} files ready to send</p>
   <div class="filter"><input type="text" id="search" placeholder="Filter..." oninput="filter(this.value)"></div>
   <div class="grid" id="grid">
 {chr(10).join(cards)}
